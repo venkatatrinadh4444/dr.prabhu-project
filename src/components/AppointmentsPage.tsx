@@ -442,7 +442,7 @@ export function AppointmentsPage() {
                       type="button"
                       variant="outline"
                       size="lg"
-                      className="flex-1 border-2 border-green-500 text-green-600 hover:bg-green-50 font-semibold py-3 rounded-full transition-all duration-200 flex-1"
+                      className="flex-1 border-2 border-green-500 text-green-600 hover:bg-green-50 font-semibold py-3 rounded-full transition-all duration-200"
                       onClick={() =>
                         window.open("https://wa.me/+919600367489", "_blank")
                       }
