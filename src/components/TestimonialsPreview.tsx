@@ -156,7 +156,7 @@ export function TestimonialsPreview() {
           ))}
         </div>
 
-        {/* Trust Indicators */}
+       {/* 
         <div className="bg-gradient-to-r from-blue-50 to-teal-50 rounded-3xl p-8 lg:p-12 text-center border border-blue-100">
           <div className="grid md:grid-cols-3 gap-8 items-center mb-8">
             <div className="space-y-2">
@@ -190,7 +190,7 @@ export function TestimonialsPreview() {
             Read More Testimonials
             <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

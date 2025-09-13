@@ -29,6 +29,22 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 export function SpecializationsPage() {
   const specializations = [
     {
+      title: "Minimally Invasive Cardiac Surgery (MICS)",
+      icon: Scissors,
+      color: "from-teal-500 to-teal-600", 
+      bgColor: "from-teal-50 to-teal-100",
+      image: "https://images.unsplash.com/photo-1684752397429-4ce4d7856cb8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsbHklMjBpbnZhc2l2ZSUyMHN1cmdlcnklMjBtZWRpY2FsJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NTY3MDc4NTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      procedures: [
+        "Minimally invasive valve replacement",
+        "Small incision CABG", 
+        "Robotic-assisted cardiac surgery",
+        "Port-access cardiac procedures",
+        "Endoscopic harvesting techniques"
+      ],
+      seoText: "Advanced minimally invasive techniques for quicker healing, minimal scars, and shorter hospital stay. Leading expert in MICS procedures in Coimbatore.",
+      stats: { procedures: "300+", recovery: "50%" }
+    },
+    {
       title: "Adult Cardiac Surgeries",
       icon: Heart,
       color: "from-red-500 to-red-600",
@@ -59,22 +75,6 @@ export function SpecializationsPage() {
       ],
       seoText: "Specialized in life-saving congenital heart surgeries for children. Expertise in complex pediatric cardiac procedures with focus on gentle, child-centered care.",
       stats: { procedures: "200+", success: "95%" }
-    },
-    {
-      title: "Minimally Invasive Cardiac Surgery (MICS)",
-      icon: Scissors,
-      color: "from-teal-500 to-teal-600", 
-      bgColor: "from-teal-50 to-teal-100",
-      image: "https://images.unsplash.com/photo-1684752397429-4ce4d7856cb8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsbHklMjBpbnZhc2l2ZSUyMHN1cmdlcnklMjBtZWRpY2FsJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NTY3MDc4NTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      procedures: [
-        "Minimally invasive valve replacement",
-        "Small incision CABG", 
-        "Robotic-assisted cardiac surgery",
-        "Port-access cardiac procedures",
-        "Endoscopic harvesting techniques"
-      ],
-      seoText: "Advanced minimally invasive techniques for quicker healing, minimal scars, and shorter hospital stay. Leading expert in MICS procedures in Coimbatore.",
-      stats: { procedures: "300+", recovery: "50%" }
     },
     {
       title: "Thoracic & Vascular Surgeries",
@@ -192,7 +192,7 @@ export function SpecializationsPage() {
               Invasive Cardiac Care</span> with world-class surgical outcomes.
             </p>
 
-            <div className="flex flex-wrap gap-6 justify-center mt-8">
+            {/* <div className="flex flex-wrap gap-6 justify-center mt-8">
               <div className="bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full">
                 <div className="text-2xl font-bold">10+</div>
                 <div className="text-sm text-blue-200">Years Experience</div>
@@ -205,7 +205,8 @@ export function SpecializationsPage() {
                 <div className="text-2xl font-bold">98%</div>
                 <div className="text-sm text-blue-200">Success Rate</div>
               </div>
-            </div>
+            </div> */}
+            
           </div>
         </div>
       </section>

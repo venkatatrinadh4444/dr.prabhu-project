@@ -49,8 +49,8 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* Key highlights */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+            {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               <div className="flex items-center gap-3 p-4 bg-white/70 backdrop-blur-sm rounded-xl border border-blue-100 hover:shadow-lg transition-all duration-200">
                 <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-2 rounded-full">
                   <Heart className="h-5 w-5 text-white animate-heartbeat" />
@@ -80,7 +80,7 @@ export function HeroSection() {
                   <p className="text-sm text-gray-600">Medical Care</p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">

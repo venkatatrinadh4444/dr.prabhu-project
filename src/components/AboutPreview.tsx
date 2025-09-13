@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { ArrowRight, GraduationCap, Building2, Heart } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import consultationImage from 'figma:asset/9181d70f54851a735381dc787f2f58bb3f5c4fbd.png';
+import heartImage from '../assets/heart-image.jpg';
 
 export function AboutPreview() {
   const highlights = [
@@ -37,9 +37,9 @@ export function AboutPreview() {
               {/* Image container */}
               <div className="relative bg-gradient-to-br from-white to-gray-50 rounded-3xl p-6 shadow-2xl border border-white/50">
                 <ImageWithFallback 
-                  src={consultationImage}
+                  src={heartImage}
                   alt="Dr. Praveen in professional consultation setting"
-                  className="w-full h-[500px] object-cover rounded-2xl shadow-lg"
+                  className="w-full h-[500px] object-cover rounded-2xl shadow-lg "
                 />
                 
                 {/* Overlay badge */}
