@@ -107,7 +107,7 @@ export function Footer({
                 <Mail className="h-5 w-5 text-teal-400" />
                 <div>
                   <p className="font-semibold text-white">
-                    drpraveenctvs@gmail.com
+                    praveenctvscbe@gmail.com
                   </p>
                   <p className="text-sm text-gray-300">
                     We respond within 2 hours
@@ -224,11 +224,11 @@ export function Footer({
           </div>
 
           {/* Google Maps Embed */}
-          
+
           <div className="rounded-lg overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3915.724580997779!2d77.08691360893975!3d11.059263939061772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRoyalCare%20Hospital%20Neelambur%20Coimbatore.!5e0!3m2!1sen!2sin!4v1757747151606!5m2!1sen!2sin"
-              className="w-full h-64" 
+              className="w-full h-64"
               loading="lazy"
             ></iframe>
           </div>

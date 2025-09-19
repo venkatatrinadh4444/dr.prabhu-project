@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Textarea } from "./ui/textarea";
-import emailjs from 'emailjs-com'
+import emailjs from "emailjs-com";
 import {
   Select,
   SelectContent,
@@ -77,8 +77,8 @@ export function AppointmentsPage() {
       };
 
       await emailjs.send(
-        "service_5q4ubhl",      // your service ID
-        "template_a26hdux",     // your template ID
+        "service_5q4ubhl", // your service ID
+        "template_a26hdux", // your template ID
         templateParams,
         "VKWo7t75R0Ld9C1LO" // your public key
       );
@@ -116,30 +116,71 @@ export function AppointmentsPage() {
     "Follow-up Consultation",
   ];
 
+  // const contactOptions = [
+  //   {
+  //     icon: Phone,
+  //     title: "Call Directly",
+  //     subtitle: "9600367489",
+  //     description: "Available 24/7 for emergency consultations",
+  //     color: "from-green-500 to-green-600",
+  //     action: "Call Now",
+  //   },
+  //   {
+  //     icon: MessageCircle,
+  //     title: "WhatsApp Chat",
+  //     subtitle: "9894067489",
+  //     description: "Quick queries and appointment booking",
+  //     color: "from-green-500 to-green-600",
+  //     action: "Chat on WhatsApp",
+  //   },
+  //   {
+  //     icon: Mail,
+  //     title: "Email Us",
+  //     subtitle: "praveenctvscbe@gmail.com",
+  //     description: "Send detailed medical reports and queries",
+  //     color: "from-blue-500 to-blue-600",
+  //     action: "Send Email",
+  //   },
+  // ];
+
   const contactOptions = [
     {
       icon: Phone,
       title: "Call Directly",
-      subtitle: "0422 - 222 7523",
+      subtitle: "9600367489",
       description: "Available 24/7 for emergency consultations",
       color: "from-green-500 to-green-600",
       action: "Call Now",
+      link: "tel:9600367489", // 📞 Dialer
     },
     {
       icon: MessageCircle,
       title: "WhatsApp Chat",
-      subtitle: "9600367489",
+      subtitle: "9894067489",
       description: "Quick queries and appointment booking",
       color: "from-green-500 to-green-600",
       action: "Chat on WhatsApp",
+      link: `https://wa.me/9894067489?text=${encodeURIComponent(
+        "Hello Doctor, I am contacting regarding a doctor appointment. Could you please assist me?"
+      )}`, // ✅ Prefilled message
     },
     {
       icon: Mail,
       title: "Email Us",
-      subtitle: "drpraveenctvs@gmail.com",
+      subtitle: "praveenctvscbe@gmail.com",
       description: "Send detailed medical reports and queries",
       color: "from-blue-500 to-blue-600",
       action: "Send Email",
+      gmailLink: `https://mail.google.com/mail/?view=cm&fs=1&to=praveenctvscbe@gmail.com&su=${encodeURIComponent(
+        "Doctor Appointment Request"
+      )}&body=${encodeURIComponent(
+        "Hello Doctor, I would like to request a consultation. Please let me know the available slots."
+      )}`,
+      mailtoLink: `mailto:praveenctvscbe@gmail.com?subject=${encodeURIComponent(
+        "Doctor Appointment Request"
+      )}&body=${encodeURIComponent(
+        "Hello Doctor, I would like to request a consultation. Please let me know the available slots."
+      )}`,
     },
   ];
 
@@ -168,12 +209,7 @@ export function AppointmentsPage() {
       question: "Can I get a second opinion consultation?",
       answer:
         "Absolutely! We encourage patients to seek second opinions for major cardiac procedures. Please bring all your medical records, test reports, and previous doctor's recommendations for a comprehensive evaluation.",
-    },
-    {
-      question: "What are the consultation fees?",
-      answer:
-        "Consultation fees vary based on the type of appointment. Initial consultation: ₹1000, Follow-up: ₹500, Emergency consultation: ₹1500. Surgical consultation fees will be adjusted against procedure costs if surgery is planned.",
-    },
+    }
   ];
 
   return (
@@ -505,8 +541,8 @@ export function AppointmentsPage() {
                       <h3 className="text-xl font-serif font-semibold text-gray-900">
                         Phone Number
                       </h3>
-                      <p className="text-gray-600">0422 - 222 7523 (Direct)</p>
-                      <p className="text-gray-600">9600367489 (WhatsApp)</p>
+                      <p className="text-gray-600">9600367489 (Direct)</p>
+                      <p className="text-gray-600">9894067489 (WhatsApp)</p>
                       <p className="text-gray-600">
                         24/7 Emergency Hotline Available
                       </p>
@@ -521,7 +557,7 @@ export function AppointmentsPage() {
                       <h3 className="text-xl font-serif font-semibold text-gray-900">
                         Email Address
                       </h3>
-                      <p className="text-gray-600">drpraveenctvs@gmail.com</p>
+                      <p className="text-gray-600">praveenctvscbe@gmail.com</p>
                       <p className="text-gray-600">Response within 4-6 hours</p>
                     </div>
                   </div>
@@ -608,7 +644,23 @@ export function AppointmentsPage() {
                   </h3>
                   <p className="font-medium text-gray-700">{option.subtitle}</p>
                   <p className="text-gray-600 text-sm">{option.description}</p>
-                  <Button className="w-full mt-4" variant="outline">
+                  <Button
+                    className="w-full mt-4 cursor-pointer"
+                    variant="outline"
+                    onClick={() => {
+                      if (option.link) {
+                        // For Call + WhatsApp
+                        window.location.href = option.link;
+                      } else if (option.gmailLink) {
+                        // For Email → Gmail first, fallback to mailto
+                        try {
+                          window.open(option.gmailLink, "_blank");
+                        } catch (e) {
+                          window.location.href = option.mailtoLink;
+                        }
+                      }
+                    }}
+                  >
                     {option.action}
                     <ArrowRight className="h-4 w-4 ml-2" />
                   </Button>

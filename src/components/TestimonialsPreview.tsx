@@ -38,26 +38,26 @@ export function TestimonialsPreview() {
     }
   ];
 
-  const stats = [
-    {
-      value: "4.9/5",
-      label: "Patient Rating",
-      icon: Star,
-      color: "text-yellow-500"
-    },
-    {
-      value: "1000+",
-      label: "Happy Patients",
-      icon: Heart,
-      color: "text-red-500"
-    },
-    {
-      value: "99%",
-      label: "Recommendation Rate",
-      icon: Quote,
-      color: "text-blue-500"
-    }
-  ];
+  // const stats = [
+  //   {
+  //     value: "4.9/5",
+  //     label: "Patient Rating",
+  //     icon: Star,
+  //     color: "text-yellow-500"
+  //   },
+  //   {
+  //     value: "1000+",
+  //     label: "Happy Patients",
+  //     icon: Heart,
+  //     color: "text-red-500"
+  //   },
+  //   {
+  //     value: "99%",
+  //     label: "Recommendation Rate",
+  //     icon: Quote,
+  //     color: "text-blue-500"
+  //   }
+  // ];
 
   return (
     <section className="py-24 bg-white relative overflow-hidden">
@@ -87,7 +87,7 @@ export function TestimonialsPreview() {
         </div>
 
         {/* Statistics */}
-        <div className="flex justify-center mb-16">
+        {/* <div className="flex justify-center mb-16">
           <div className="grid grid-cols-3 gap-8 md:gap-16">
             {stats.map((stat, index) => (
               <div key={index} className="text-center group">
@@ -101,7 +101,7 @@ export function TestimonialsPreview() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Featured Testimonials */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">

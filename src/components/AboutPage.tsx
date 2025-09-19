@@ -20,6 +20,8 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import drPraveenImage from 'figma:asset/eadf3a6a6d1a712c519faf10a0ce291eb447a7b1.png';
 import consultationImage from 'figma:asset/9181d70f54851a735381dc787f2f58bb3f5c4fbd.png';
 import newDrPraveenImage from 'figma:asset/9c237fd80c1a435d83ebea78083ef507cbd7b2e0.png';
+import doctorImage from '../assets/profile-image1.jpg';
+import doctorImage2 from '../assets/profile-image2.jpg'
 
 export function AboutPage({redirectHanlder}:{redirectHanlder:(name:string)=>void}) {
   const educationTimeline = [
@@ -48,7 +50,6 @@ export function AboutPage({redirectHanlder}:{redirectHanlder:(name:string)=>void
 
   const careerJourney = [
     {
-      position: "Junior Resident",
       institution: "Coimbatore Medical College Hospital",
       description: "Foundation training in general medicine and surgery",
       image: "https://images.unsplash.com/photo-1643297653764-c861a5847d5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwZWR1Y2F0aW9uJTIwZ3JhZHVhdGlvbiUyMGNlcmVtb255fGVufDF8fHx8MTc1NjY0NjExM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
@@ -137,7 +138,7 @@ export function AboutPage({redirectHanlder}:{redirectHanlder:(name:string)=>void
               <div className="absolute -inset-4 bg-gradient-to-br from-blue-200/50 via-teal-200/50 to-green-200/50 rounded-3xl blur-2xl opacity-70"></div>
               <div className="relative bg-gradient-to-br from-white to-gray-50 rounded-3xl p-6 shadow-2xl">
                 <ImageWithFallback 
-                  src={drPraveenImage}
+                  src={doctorImage}
                   alt="Dr. G. Praveen Prabu - Professional Portrait"
                   className="w-full h-[500px] object-cover rounded-2xl"
                 />
@@ -153,7 +154,7 @@ export function AboutPage({redirectHanlder}:{redirectHanlder:(name:string)=>void
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <ImageWithFallback 
-                src={newDrPraveenImage}
+                src={doctorImage2}
                 alt="Dr. Praveen Prabu - Professional Portrait"
                 className="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
               />
@@ -316,7 +317,7 @@ export function AboutPage({redirectHanlder}:{redirectHanlder:(name:string)=>void
                       </div>
                       
                       <h3 className="text-2xl font-serif font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                        {career.position}
+                        {career?.position}
                       </h3>
                       
                       <p className="text-lg font-medium text-blue-600 mb-2">

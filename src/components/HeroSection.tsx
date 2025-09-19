@@ -3,8 +3,9 @@ import { Badge } from "./ui/badge";
 import { Heart, Award, Clock, ChevronRight, ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import drPraveenImage from 'figma:asset/eadf3a6a6d1a712c519faf10a0ce291eb447a7b1.png';
+import doctorImage from '../assets/profile-image1.jpg'
 
-export function HeroSection() {
+export function HeroSection({footerRedirection}:{footerRedirection:(name:string)=>void}) {
   return (
     <section id="home" className="relative min-h-screen pt-32 pb-20 overflow-hidden">
       {/* Premium gradient background */}
@@ -86,7 +87,8 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-8 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-8 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer"
+                onClick={()=>footerRedirection('appointments')}
               >
                 Book Appointment
                 <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -95,7 +97,8 @@ export function HeroSection() {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-semibold px-8 py-4 rounded-full transition-all duration-200 group"
+                className="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-semibold px-8 py-4 rounded-full transition-all duration-200 group cursor-pointer"
+                onClick={()=>footerRedirection('about')}
               >
                 Learn More About Me
                 <ChevronRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -123,7 +126,7 @@ export function HeroSection() {
               {/* Main image container */}
               <div className="relative bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-2xl border border-white/50 backdrop-blur-sm">
                 <ImageWithFallback 
-                  src={drPraveenImage}
+                  src={doctorImage}
                   alt="Dr. G. Praveen Prabu - Cardiovascular & Thoracic Surgeon"
                   className="w-full h-[600px] object-cover rounded-2xl shadow-lg"
                 />

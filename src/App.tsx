@@ -37,7 +37,7 @@ export default function App() {
         return (
           <main className="overflow-hidden">
             {/* Hero Banner - Full-width with Dr. Praveen's portrait */}
-            <HeroSection />
+            <HeroSection footerRedirection={footerRedirection}/>
             
             {/* Trust & Achievements - Quick stats with SEO-friendly content */}
             <TrustSection />

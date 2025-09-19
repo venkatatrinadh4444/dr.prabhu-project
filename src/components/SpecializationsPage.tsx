@@ -41,8 +41,7 @@ export function SpecializationsPage() {
         "Port-access cardiac procedures",
         "Endoscopic harvesting techniques"
       ],
-      seoText: "Advanced minimally invasive techniques for quicker healing, minimal scars, and shorter hospital stay. Leading expert in MICS procedures in Coimbatore.",
-      stats: { procedures: "300+", recovery: "50%" }
+      seoText: "Advanced minimally invasive techniques for quicker healing, minimal scars, and shorter hospital stay. Leading expert in MICS procedures in Coimbatore."
     },
     {
       title: "Adult Cardiac Surgeries",
@@ -57,8 +56,7 @@ export function SpecializationsPage() {
         "Aortic root surgeries",
         "Complex cardiac reconstructions"
       ],
-      seoText: "Expert in bypass and valve surgeries with high success rate and faster recovery. Specialized in complex adult cardiac procedures using advanced techniques.",
-      stats: { procedures: "500+", success: "98%" }
+      seoText: "Expert in bypass and valve surgeries with high success rate and faster recovery. Specialized in complex adult cardiac procedures using advanced techniques."
     },
     {
       title: "Pediatric Cardiac Surgeries", 
@@ -73,8 +71,7 @@ export function SpecializationsPage() {
         "Patent Ductus Arteriosus (PDA) closures",
         "Complex congenital heart defect corrections"
       ],
-      seoText: "Specialized in life-saving congenital heart surgeries for children. Expertise in complex pediatric cardiac procedures with focus on gentle, child-centered care.",
-      stats: { procedures: "200+", success: "95%" }
+      seoText: "Specialized in life-saving congenital heart surgeries for children. Expertise in complex pediatric cardiac procedures with focus on gentle, child-centered care."
     },
     {
       title: "Thoracic & Vascular Surgeries",
@@ -89,15 +86,14 @@ export function SpecializationsPage() {
         "Tracheal surgeries & repairs",
         "Mediastinal tumor resections"
       ],
-      seoText: "Expert care in complex thoracic and vascular procedures using cutting-edge technology. Specialized in aortic surgeries and minimally invasive thoracic procedures.",
-      stats: { procedures: "150+", success: "96%" }
+      seoText: "Expert care in complex thoracic and vascular procedures using cutting-edge technology. Specialized in aortic surgeries and minimally invasive thoracic procedures."
     }
   ];
 
   const whyChoosePoints = [
     {
       icon: Award,
-      title: "10+ Years Surgical Excellence",
+      title: "Surgical Excellence",
       description: "Decade of expertise in complex cardiac procedures"
     },
     {
@@ -107,7 +103,7 @@ export function SpecializationsPage() {
     },
     {
       icon: Users,
-      title: "1000+ Lives Saved",
+      title: "Trust",
       description: "Trusted by patients across Tamil Nadu for cardiac care"
     },
     {
@@ -317,7 +313,7 @@ export function SpecializationsPage() {
                         </ul>
                       </div>
 
-                      <div className="flex gap-6 pt-4">
+                      {/* <div className="flex gap-6 pt-4">
                         <div className={`bg-gradient-to-br ${spec.bgColor} px-4 py-2 rounded-lg`}>
                           <div className="text-lg font-bold text-gray-900">{spec.stats.procedures || spec.stats.recovery}</div>
                           <div className="text-sm text-gray-600">{spec.stats.procedures ? 'Procedures' : 'Faster Recovery'}</div>
@@ -326,7 +322,7 @@ export function SpecializationsPage() {
                           <div className="text-lg font-bold text-gray-900">{spec.stats.success || '98%'}</div>
                           <div className="text-sm text-gray-600">Success Rate</div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </CardContent>
                 </div>
@@ -365,7 +361,7 @@ export function SpecializationsPage() {
                   <div className="bg-gradient-to-br from-blue-500 to-teal-500 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-200">
                     <point.icon className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-serif font-semibold text-gray-900">{point.title}</h3>
+                  <h3 className="text-xl font-serif font-semibold text-gray-900">{point?.title}</h3>
                   <p className="text-gray-600">{point.description}</p>
                 </CardContent>
               </Card>
@@ -374,7 +370,7 @@ export function SpecializationsPage() {
 
           <div className="text-center mt-12">
             <p className="text-lg text-blue-600 font-medium max-w-2xl mx-auto">
-              "Trusted by 1000+ patients across Tamil Nadu for life-saving cardiac procedures with exceptional surgical outcomes and personalized care."
+              "Trusted by patients across Tamil Nadu for life-saving cardiac procedures with exceptional surgical outcomes and personalized care."
             </p>
           </div>
         </div>
