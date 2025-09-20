@@ -25,6 +25,9 @@ import {
   HeartPulse
 } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import thoracic from '../assets/thoracic.jpg';
+import mics from '../assets/mimc.jpg';
+import adultSurgeryImg from '../assets/adultSpecialization.jpg'
 
 export function SpecializationsPage() {
   const specializations = [
@@ -33,7 +36,7 @@ export function SpecializationsPage() {
       icon: Scissors,
       color: "from-teal-500 to-teal-600", 
       bgColor: "from-teal-50 to-teal-100",
-      image: "https://images.unsplash.com/photo-1684752397429-4ce4d7856cb8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsbHklMjBpbnZhc2l2ZSUyMHN1cmdlcnklMjBtZWRpY2FsJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NTY3MDc4NTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: mics,
       procedures: [
         "Minimally invasive valve replacement",
         "Small incision CABG", 
@@ -48,7 +51,7 @@ export function SpecializationsPage() {
       icon: Heart,
       color: "from-red-500 to-red-600",
       bgColor: "from-red-50 to-red-100",
-      image: "https://images.unsplash.com/photo-1596144241742-a54dffcc9b26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXJnZW9uJTIwb3BlcmF0aW5nJTIwcm9vbSUyMGhlYXJ0JTIwc3VyZ2VyeXxlbnwxfHx8fDE3NTY3MDc4NDN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: adultSurgeryImg,
       procedures: [
         "Beating-heart CABG (Coronary Artery Bypass Grafting)",
         "On-pump CABG",
@@ -78,7 +81,7 @@ export function SpecializationsPage() {
       icon: Activity,
       color: "from-purple-500 to-purple-600",
       bgColor: "from-purple-50 to-purple-100", 
-      image: "https://images.unsplash.com/photo-1676155081561-865fab11da37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aG9yYWNpYyUyMHN1cmdlcnklMjBtZWRpY2FsJTIwcHJvY2VkdXJlfGVufDF8fHx8MTc1NjcwNzg1OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: thoracic,
       procedures: [
         "Aortic surgeries & aneurysm repairs",
         "Vascular reconstruction procedures",
@@ -464,7 +467,7 @@ export function SpecializationsPage() {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-10 py-4 rounded-full transition-all duration-200 text-lg"
+                className="border-2 border-white text-white hover:bg-white text-blue-600 font-semibold px-10 py-4 rounded-full transition-all duration-200 text-lg"
               >
                 Emergency Contact
               </Button>

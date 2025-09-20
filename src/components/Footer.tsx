@@ -95,7 +95,7 @@ export function Footer({
                 <Phone className="h-5 w-5 text-blue-400" />
                 <div>
                   <p className="font-semibold text-white">
-                    Emergency: 0422 - 222 7523
+                    Emergency : 9600367489
                   </p>
                   <p className="text-sm text-gray-300">
                     Available 24/7 for emergencies

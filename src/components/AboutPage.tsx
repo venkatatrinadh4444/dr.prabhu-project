@@ -21,7 +21,10 @@ import drPraveenImage from 'figma:asset/eadf3a6a6d1a712c519faf10a0ce291eb447a7b1
 import consultationImage from 'figma:asset/9181d70f54851a735381dc787f2f58bb3f5c4fbd.png';
 import newDrPraveenImage from 'figma:asset/9c237fd80c1a435d83ebea78083ef507cbd7b2e0.png';
 import doctorImage from '../assets/profile-image1.jpg';
-import doctorImage2 from '../assets/profile-image2.jpg'
+import doctorImage2 from '../assets/profile-image2.jpg';
+import collegeImg from '../assets/college.jpg';
+import assistantProImg from '../assets/aboutUsSection.jpg'
+import associateConsultant from '../assets/aboutMeSection.jpg'
 
 export function AboutPage({redirectHanlder}:{redirectHanlder:(name:string)=>void}) {
   const educationTimeline = [
@@ -52,19 +55,19 @@ export function AboutPage({redirectHanlder}:{redirectHanlder:(name:string)=>void
     {
       institution: "Coimbatore Medical College Hospital",
       description: "Foundation training in general medicine and surgery",
-      image: "https://images.unsplash.com/photo-1643297653764-c861a5847d5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwZWR1Y2F0aW9uJTIwZ3JhZHVhdGlvbiUyMGNlcmVtb255fGVufDF8fHx8MTc1NjY0NjExM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      image: collegeImg
     },
     {
       position: "Assistant Professor",
-      institution: "Coimbatore Medical College Hospital",
+      institution: "Madurai Medical College Hospital",
       description: "Teaching and clinical practice in cardiothoracic surgery",
-      image: "https://images.unsplash.com/photo-1589104759909-e355f8999f7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwdGVhbSUyMGhvc3BpdGFsJTIwY29sbGFib3JhdGlvbnxlbnwxfHx8fDE3NTY2NDYxMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      image: assistantProImg
     },
     {
       position: "Associate Consultant",
       institution: "Apollo Greams Road Hospital, Chennai",
       description: "Advanced cardiac surgery and minimally invasive procedures",
-      image: "https://images.unsplash.com/photo-1631217872822-1c2546d6b864?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwY29uc3VsdGF0aW9uJTIwZG9jdG9yJTIwcGF0aWVudHxlbnwxfHx8fDE3NTY2MjMwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      image: associateConsultant
     },
     {
       position: "Consultant Cardiothoracic Surgeon",
