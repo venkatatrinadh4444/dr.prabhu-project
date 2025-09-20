@@ -23,7 +23,7 @@ export function TrustSection() {
     },
     {
       icon: TrendingUp,
-      number: "",
+      number: "Patient",
       label: "Patient Recommendation",
       description: "High success rate in complex heart surgeries",
       gradient: "from-green-500 to-green-600",

@@ -25,6 +25,7 @@ import doctorImage2 from '../assets/profile-image2.jpg';
 import collegeImg from '../assets/college.jpg';
 import assistantProImg from '../assets/aboutUsSection.jpg'
 import associateConsultant from '../assets/aboutMeSection.jpg'
+import consultantImg from '../assets/hospital.jpg'
 
 export function AboutPage({redirectHanlder}:{redirectHanlder:(name:string)=>void}) {
   const educationTimeline = [
@@ -73,7 +74,7 @@ export function AboutPage({redirectHanlder}:{redirectHanlder:(name:string)=>void
       position: "Consultant Cardiothoracic Surgeon",
       institution: "Royal Care Hospital, Coimbatore",
       description: "Leading cardiac surgery department with focus on patient care excellence",
-      image: "https://images.unsplash.com/photo-1739285452629-2672b13fa42d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBjb25zdWx0aW5nJTIwcGF0aWVudCUyMGV4YW1pbmF0aW9ufGVufDF8fHx8MTc1NjY0NjExMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      image: consultantImg
     }
   ];
 
