@@ -38,7 +38,7 @@ export function SpecializationsPreview({redirectHanlder}:{redirectHanlder:(name:
       icon: Zap,
       title: "Minimally Invasive Heart Surgery Techniques",
       description: "Learn about revolutionary minimally invasive cardiac surgery methods and patient benefits",
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Placeholder - you can replace with actual educational video
+      videoUrl: "https://youtu.be/kiYZeF1MKc4?si=7zqAD9IRlIxTRi3A", // Placeholder - you can replace with actual educational video
       thumbnail: "https://images.unsplash.com/photo-1711343777918-6d395c16e37f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob3NwaXRhbCUyMGNvcnJpZG9yJTIwbWVkaWNhbCUyMGZhY2lsaXR5fGVufDF8fHx8MTc1NjY0MjkyNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       duration: "18:30",
       gradient: "from-teal-500 to-teal-600"
@@ -47,7 +47,7 @@ export function SpecializationsPreview({redirectHanlder}:{redirectHanlder:(name:
       icon: Baby,
       title: "Pediatric Congenital Heart Surgery Explained",
       description: "Understanding complex congenital heart defect repairs and pediatric cardiac surgery approaches",
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Placeholder - you can replace with actual educational video
+      videoUrl: "https://vimeo.com/1123609800?share=copy#t=0", // Placeholder - you can replace with actual educational video
       thumbnail: "https://images.unsplash.com/photo-1631217872822-1c2546d6b864?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwY29uc3VsdGF0aW9uJTIwZG9jdG9yJTIwcGF0aWVudHxlbnwxfHx8fDE3NTY2MjMwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       duration: "22:15",
       gradient: "from-purple-500 to-purple-600"

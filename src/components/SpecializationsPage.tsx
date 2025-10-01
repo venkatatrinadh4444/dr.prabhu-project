@@ -28,6 +28,8 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import thoracic from '../assets/thoracic.jpg';
 import mics from '../assets/mimc.jpg';
 import adultSurgeryImg from '../assets/adultSpecialization.jpg'
+import adultCardiac from '../assets/adultCaridac.jpg'
+import aroticImg from '../assets/aorticImage.jpg'
 
 export function SpecializationsPage() {
   const specializations = [
@@ -51,7 +53,7 @@ export function SpecializationsPage() {
       icon: Heart,
       color: "from-red-500 to-red-600",
       bgColor: "from-red-50 to-red-100",
-      image: adultSurgeryImg,
+      image: adultCardiac,
       procedures: [
         "Beating-heart CABG (Coronary Artery Bypass Grafting)",
         "On-pump CABG",
@@ -90,6 +92,19 @@ export function SpecializationsPage() {
         "Mediastinal tumor resections"
       ],
       seoText: "Expert care in complex thoracic and vascular procedures using cutting-edge technology. Specialized in aortic surgeries and minimally invasive thoracic procedures."
+    },
+    {
+      title: "Aortic & Complex Heart Surgeries",
+      icon: Activity,
+      color: "from-purple-500 to-purple-600",
+      bgColor: "from-purple-50 to-purple-100", 
+      image: aroticImg,
+      procedures: [
+        "Aortic Surgery (including Bentall procedure)",
+        "Adult Congenital Defect Corrections", 
+        "Re-do / Re-operative Heart Surgeries"
+      ],
+      seoText: "Expert in advanced aortic and complex heart procedures with precision techniques to ensure optimal outcomes. Specialized in treating life-threatening conditions involving the aorta and complex structural abnormalities of the heart."
     }
   ];
 
