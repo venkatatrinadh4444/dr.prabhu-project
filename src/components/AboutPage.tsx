@@ -54,13 +54,13 @@ export function AboutPage({redirectHanlder}:{redirectHanlder:(name:string)=>void
 
   const careerJourney = [
     {
-      institution: "Coimbatore Medical College Hospital",
+      institution: "Madurai Medical College Hospital",
       description: "Foundation training in general medicine and surgery",
       image: collegeImg
     },
     {
       position: "Assistant Professor",
-      institution: "Madurai Medical College Hospital",
+      institution: "Coimbatore Medical College Hospital",
       description: "Teaching and clinical practice in cardiothoracic surgery",
       image: assistantProImg
     },
