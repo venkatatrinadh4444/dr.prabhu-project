@@ -193,7 +193,7 @@ export function AppointmentsPage() {
     {
       question: "Do you accept emergency appointments?",
       answer:
-        "Yes, we provide 24/7 emergency cardiac care. For cardiac emergencies, please call our emergency hotline directly at 0422 - 222 7523 or visit the RoyalCare Hospital emergency department. Our team is always ready to handle urgent cardiac cases.",
+        "Yes, we provide 24/7 emergency cardiac care. For cardiac emergencies, please call our emergency hotline directly at 9600367489 or visit the RoyalCare Hospital emergency department. Our team is always ready to handle urgent cardiac cases.",
     },
     {
       question: "How long does a consultation take?",

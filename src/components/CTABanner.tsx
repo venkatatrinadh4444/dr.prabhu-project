@@ -8,7 +8,7 @@ export function CTABanner({bookingOnline}:{bookingOnline:()=>void}) {
     {
       icon: Phone,
       title: "Emergency Line",
-      subtitle: "0422 - 222 7523",
+      subtitle: "9600367489",
       action: "Call Now",
       urgent: true
     },
@@ -137,7 +137,7 @@ export function CTABanner({bookingOnline}:{bookingOnline:()=>void}) {
                       className="text-white hover:bg-white/20 font-medium group-hover:translate-x-1 transition-transform"
                       onClick={() => {
                         if (action.title === "Emergency Line") {
-                          window.open("tel:04222227523", "_self");
+                          window.open("tel:9600367489", "_self");
                         } else if (action.title === "Visit Clinic") {
                           window.open("https://maps.google.com/?q=RoyalCare+Hospital+Neelambur+Coimbatore", "_blank");
                         } else if(action.title === "Book Appointment") {

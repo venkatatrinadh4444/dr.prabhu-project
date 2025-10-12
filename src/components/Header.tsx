@@ -40,7 +40,7 @@ export function Header({ currentPage, setCurrentPage }: HeaderProps) {
           <div className="flex flex-wrap justify-center md:justify-between items-center gap-4 text-sm">
             <div className="flex items-center gap-2 text-blue-700">
               <Phone className="h-4 w-4" />
-              <span className="font-medium">0422 - 222 7523</span>
+              <span className="font-medium">9600367489</span>
             </div>
             <div className="flex items-center gap-2 text-teal-700">
               <MapPin className="h-4 w-4" />

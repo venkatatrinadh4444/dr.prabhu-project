@@ -13,6 +13,10 @@ import {
   ExternalLink
 } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import videoCard1Img from '../assets/1ST - vIDEO Thumbnail.jpg'
+import videoCard2Img from '../assets/2nd - Video Thumbnail.jpg'
+import videoCard3Img from '../assets/3rd - Video Thumbnail.jpg'
+import videoCard4Img from '../assets/4th - Video Thumbnail.png'
 
 export function SpecializationsPreview({redirectHanlder}:{redirectHanlder:(name:string)=>void}) {
   const videoCards = [
@@ -21,7 +25,7 @@ export function SpecializationsPreview({redirectHanlder}:{redirectHanlder:(name:
       title: "Heart Surgery Insights | Dr. G. Praveen Prabu",
       description: "Comprehensive overview of modern cardiac surgical techniques and patient care approaches",
       videoUrl: "https://www.youtube.com/watch?v=4kYM2NMiZhQ",
-      thumbnail: "https://images.unsplash.com/photo-1664902265139-934219cee42f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJkaWFjJTIwc3VyZ2VyeSUyMG1lZGljYWwlMjBlcXVpcG1lbnR8ZW58MXx8fHwxNzU2NjQyOTI2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      thumbnail: videoCard1Img,
       duration: "12:45",
       gradient: "from-blue-500 to-blue-600"
     },
@@ -30,7 +34,7 @@ export function SpecializationsPreview({redirectHanlder}:{redirectHanlder:(name:
       title: "Advanced Cardiac Procedures | Medical Education",
       description: "Educational video covering cutting-edge cardiovascular surgical procedures and innovations",
       videoUrl: "https://www.youtube.com/watch?v=OmtXasI_A7g",
-      thumbnail: "https://images.unsplash.com/photo-1606619788433-2ba22e49d498?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBhdCUyMHdvcmslMjBzdXJnZXJ5JTIwaG9zcGl0YWx8ZW58MXx8fHwxNzU2NjQyOTI1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      thumbnail: videoCard2Img,
       duration: "15:20",
       gradient: "from-green-500 to-green-600"
     },
@@ -39,7 +43,7 @@ export function SpecializationsPreview({redirectHanlder}:{redirectHanlder:(name:
       title: "Minimally Invasive Heart Surgery Techniques",
       description: "Learn about revolutionary minimally invasive cardiac surgery methods and patient benefits",
       videoUrl: "https://youtu.be/kiYZeF1MKc4?si=7zqAD9IRlIxTRi3A", // Placeholder - you can replace with actual educational video
-      thumbnail: "https://images.unsplash.com/photo-1711343777918-6d395c16e37f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob3NwaXRhbCUyMGNvcnJpZG9yJTIwbWVkaWNhbCUyMGZhY2lsaXR5fGVufDF8fHx8MTc1NjY0MjkyNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      thumbnail: videoCard3Img,
       duration: "18:30",
       gradient: "from-teal-500 to-teal-600"
     },
@@ -48,7 +52,7 @@ export function SpecializationsPreview({redirectHanlder}:{redirectHanlder:(name:
       title: "CABG - proximal anastomosis without partial aorta  clamping",
       description: "Understanding complex congenital heart defect repairs and pediatric cardiac surgery approaches",
       videoUrl: "https://vimeo.com/1123609800?share=copy#t=0", // Placeholder - you can replace with actual educational video
-      thumbnail: "https://images.unsplash.com/photo-1631217872822-1c2546d6b864?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwY29uc3VsdGF0aW9uJTIwZG9jdG9yJTIwcGF0aWVudHxlbnwxfHx8fDE3NTY2MjMwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      thumbnail: videoCard4Img,
       duration: "22:15",
       gradient: "from-purple-500 to-purple-600"
     }
