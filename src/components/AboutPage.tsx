@@ -26,6 +26,7 @@ import collegeImg from '../assets/college.jpg';
 import assistantProImg from '../assets/aboutUsSection.jpg'
 import associateConsultant from '../assets/aboutMeSection.jpg'
 import consultantImg from '../assets/hospital.jpg'
+import mainProfileImg from '../assets/doctor-main-image.jpg'
 
 export function AboutPage({redirectHanlder}:{redirectHanlder:(name:string)=>void}) {
   const educationTimeline = [
@@ -158,7 +159,7 @@ export function AboutPage({redirectHanlder}:{redirectHanlder:(name:string)=>void
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <ImageWithFallback 
-                src={doctorImage2}
+                src={mainProfileImg}
                 alt="Dr. Praveen Prabu - Professional Portrait"
                 className="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
               />

@@ -26,7 +26,7 @@ export function SpecializationsPreview({redirectHanlder}:{redirectHanlder:(name:
       description: "Comprehensive overview of modern cardiac surgical techniques and patient care approaches",
       videoUrl: "https://www.youtube.com/watch?v=4kYM2NMiZhQ",
       thumbnail: videoCard1Img,
-      duration: "12:45",
+      duration: "2:17",
       gradient: "from-blue-500 to-blue-600"
     },
     {
@@ -35,7 +35,7 @@ export function SpecializationsPreview({redirectHanlder}:{redirectHanlder:(name:
       description: "Educational video covering cutting-edge cardiovascular surgical procedures and innovations",
       videoUrl: "https://www.youtube.com/watch?v=OmtXasI_A7g",
       thumbnail: videoCard2Img,
-      duration: "15:20",
+      duration: "2:23",
       gradient: "from-green-500 to-green-600"
     },
     {
@@ -44,7 +44,7 @@ export function SpecializationsPreview({redirectHanlder}:{redirectHanlder:(name:
       description: "Learn about revolutionary minimally invasive cardiac surgery methods and patient benefits",
       videoUrl: "https://youtu.be/kiYZeF1MKc4?si=7zqAD9IRlIxTRi3A", // Placeholder - you can replace with actual educational video
       thumbnail: videoCard3Img,
-      duration: "18:30",
+      duration: "21:32",
       gradient: "from-teal-500 to-teal-600"
     },
     {
@@ -53,7 +53,7 @@ export function SpecializationsPreview({redirectHanlder}:{redirectHanlder:(name:
       description: "Understanding complex congenital heart defect repairs and pediatric cardiac surgery approaches",
       videoUrl: "https://vimeo.com/1123609800?share=copy#t=0", // Placeholder - you can replace with actual educational video
       thumbnail: videoCard4Img,
-      duration: "22:15",
+      duration: "8:56",
       gradient: "from-purple-500 to-purple-600"
     }
   ];
